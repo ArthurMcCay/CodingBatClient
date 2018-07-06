@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CodingBat</string>
+
+    <!-- Login screen strings -->
+    <string name="email">email</string>
+    <string name="login_pw">password</string>
+    <string name="login_log_in">LOGIN</string>
+    <string name="login_forgot_pw">Forgot password?</string>
+    <string name="login_no_account">No account? Sign up!</string>
+    <!-- Error strings -->
+    <string name="error_email_empty">Email cannot be empty!</string>
+    <string name="error_pw_empty">Password cannot be empty!</string>
+    <string name="error_email_incorrect">Incorrect email!</string>
+    <string name="error_pw_incorrect">Incorrect password!</string>
+    <!-- Editor Activity Strings -->
+    <string name="hint">type your code here...</string>
+
+</resources>

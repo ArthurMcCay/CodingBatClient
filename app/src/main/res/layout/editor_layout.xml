@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/taskVisibilityIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_task_invisible"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageButton
+            android:id="@+id/testCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_run_code"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#303334"/>
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/examples"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#303334"/>
+
+    <com.codebzrk.codingbatclient.ui.views.CodeEditor
+        android:id="@+id/editor_text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="10dp"
+        android:gravity="start|top"
+        android:typeface="monospace"
+        android:inputType="textVisiblePassword|textMultiLine"
+        android:ellipsize="end"
+        android:textSize="12sp"
+        android:background="@color/colorLightGray"
+        android:hint="@string/hint"/>
+
+</LinearLayout>
